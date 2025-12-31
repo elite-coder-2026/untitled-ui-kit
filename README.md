@@ -27,7 +27,7 @@ untitled-ui-kit/
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/elite-coder-2026/untitled-ui-kit.git
 cd untitled-ui-kit
 ```
 
@@ -112,7 +112,7 @@ When you're ready to set up a build process, consider:
 
 ## Support
 
-For questions and support, please [create an issue](link-to-issues) or contact [your-email].
+For questions and support, please [create an issue](https://github.com/elite-coder-2026/untitled-ui-kit/issues) or reach out through the GitHub repository.
 
 ---
 

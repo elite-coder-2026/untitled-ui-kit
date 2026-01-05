@@ -1,0 +1,6 @@
+@import "../partials/variables";
+header {
+    &.bordered {
+        border: 1px solid $clr-col-header-text;
+    }
+}

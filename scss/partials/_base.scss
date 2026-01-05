@@ -1,0 +1,29 @@
+@import "variables";
+@import "mixins";
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    max-width: 1216px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 96px 0;
+}
+
+.section-title {
+    @include set-text-clr($clr-section-title-text)
+}

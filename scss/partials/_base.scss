@@ -25,5 +25,7 @@ section {
 }
 
 .section-title {
-    @include set-text-clr($clr-section-title-text)
+    @include set-text-clr($clr-section-title-text);
+    @include set-font-size(26);
+    font-weight: bold;
 }

@@ -1,6 +1,13 @@
 @import "../partials/variables";
+@import "../partials/mixins";
+
 header {
+    .primary {
+        ul {
+            @include display('flex');
+        }
+    }
     &.bordered {
-        border: 1px solid $clr-col-header-text;
+        border: 1px solid $clr-base-border;
     }
 }

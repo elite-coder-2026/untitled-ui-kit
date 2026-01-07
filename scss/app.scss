@@ -1,0 +1,26 @@
+// 1. Configuration and Variables
+@import 'partials/variables';
+
+// 2. Base styles and resets
+@import 'partials/reset';
+@import 'partials/base';
+
+// 3. Layout
+@import 'partials/layout';
+@import 'partials/grid';
+
+// 4. Components
+@import 'components/notifications';
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/navigation';
+@import 'components/header';
+@import "components/customers";
+
+// 5. Utilities
+@import 'partials/utilities';
+
+@import 'partials/footer';
+@import 'partials/mixins';
+
+@import "icons";

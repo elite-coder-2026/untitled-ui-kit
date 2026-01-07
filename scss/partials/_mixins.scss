@@ -1,0 +1,32 @@
+@function px-to-rem($size) {
+    @return ($size / 16) * 1rem;
+}
+
+@function tint-color($clr, $g) {
+    @return mix(white, $clr, $g);
+}
+
+@function shade-color($clr, $g) {
+    @return mix(black, $clr, $g);
+}
+
+@mixin set-text-clr($c) {
+    color: $c;
+}
+
+@mixin set-font-size($size) {
+    font-size: px-to-rem($size);
+}
+
+@mixin display($type) {
+   @if $type == 'none' {
+       display: none;
+   } @else if $type == 'block' {
+       display: block;
+   } @else if $type == 'grid' {
+       display: grid;
+   } @else if $type == 'flex' {
+       display: flex;
+   }
+}
+

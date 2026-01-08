@@ -12,46 +12,112 @@
 <body>
     <section class="team">
         <div class="container">
-            <div class="table-header">
-                <div class="table-name">team emebers</div>
-                <div class="sm-primary-badge"> 100 users</div>
-                <div class="icon">
-                    <ul class="tables-sub-menu"></ul>
+            <div class="table-card">
+                <div class="table-header">
+                    <div class="table-name">team emebers</div>
+                    <div class="sm-primary-badge"> 100 users</div>
+                    <div class="icon">
+                        <ul class="tables-sub-menu"></ul>
+                    </div>
                 </div>
-            </div>
-            <table class="team-table"></table>
-            <div class="table-footer">
-                <button class="secondary-btn">
-                    <span class="icon">
-                        <span class="prev-arrow"></span>
-                    </span>
-                    previous
-                </button>
-                <ul class="pagination">
-                    <li>
-                        <a href="#">1</a>
-                    </li>
-                    <li>
-                        <a href="#">2</a>
-                    </li>
-                    <li>
-                        <a href="#">3</a>
-                    </li>
-                    <li>
-                        ...
-                    </li>
-                    <li>
-                        <a href="#">8</a>
-                    </li>
-                    <li>
-                        <a href="#">9</a>
-                    </li>
-                    <li>
-                        <a href="#">10</a>
-                    </li>
-                </ul> <!----- todo: /.pagination ----->
-            </div> <!----- todo: /.table-footer ----->
-        </div>
+                <table class="team-table">
+                    <thead>
+                        <tr>
+                            <th>
+                                <div class="combobox"></div>
+                                name
+                            </th>
+                            <th>
+                                roles
+                            </th>
+
+                            <th>
+                                email address
+                            </th>
+                            <th>
+                                tags
+                            </th>
+                            <th>
+                                <!----- todo: leave this empty for edit and delete ----->
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="combobox"></div>
+                                <div class="avatar"><img src="@" alt="oliva rhye"></div>
+                                <div class="info">
+                                    <div class="user-name">olivia rhye</div>
+                                    <div class="handle">@olivia</div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="status-badge"></div>
+                            </td>
+
+                            <td>
+                                product designer
+                            </td>
+                            <td>
+                                <ul class="tags">
+                                    <li class="tag">
+                                        <a href="" class="designer"></a>
+                                    </li>
+
+                                    <li class="tag">
+                                        <a href="" class="product"></a>
+                                    </li>
+
+                                    <li class="tag">
+                                        <a href="" class="marketing"></a>
+                                    </li>
+                                    <li class="number">+4</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="table-footer">
+                    <button class="secondary-btn">
+                        <span class="icon">
+                            <span class="prev-arrow"></span>
+                        </span>
+                        previous
+                    </button>
+                    <ul class="pagination">
+                        <li>
+                            <a href="#">1</a>
+                        </li>
+                        <li>
+                            <a href="#">2</a>
+                        </li>
+                        <li>
+                            <a href="#">3</a>
+                        </li>
+                        <li>
+                            ...
+                        </li>
+                        <li>
+                            <a href="#">8</a>
+                        </li>
+                        <li>
+                            <a href="#">9</a>
+                        </li>
+                        <li>
+                            <a href="#">10</a>
+                        </li>
+                    </ul> <!----- todo: /.pagination ----->
+                </div> <!----- todo: /.table-footer ----->
+            </div> <!-----todo: /.table-card ----->
+        </div> <!-----todo: /.container ----->
     </section>
+
+    <!----- todo: /sect.team ----->
+
+    <!----- todo: start of sect.customers ----->
+
+    <section class="customers"></section>
 </body>
 </html>

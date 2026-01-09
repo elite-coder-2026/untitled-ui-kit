@@ -1,0 +1,9 @@
+"filename", "language", "PostCSS", "HTML", "SCSS", "comment", "blank", "total"
+"/Users/darrellparkhouse/development/untitled-ui-kit/css/app.css", "PostCSS", 3, 0, 0, 0, 1, 4
+"/Users/darrellparkhouse/development/untitled-ui-kit/scss/app.scss", "SCSS", 0, 0, 2, 0, -1, 1
+"/Users/darrellparkhouse/development/untitled-ui-kit/scss/components/_badges.scss", "SCSS", 0, 0, 0, 0, 1, 1
+"/Users/darrellparkhouse/development/untitled-ui-kit/scss/components/_tables.scss", "SCSS", 0, 0, 3, 0, 0, 3
+"/Users/darrellparkhouse/development/untitled-ui-kit/scss/partials/_mixins.scss", "SCSS", 0, 0, 8, 0, 0, 8
+"/Users/darrellparkhouse/development/untitled-ui-kit/scss/partials/_variables.scss", "SCSS", 0, 0, 5, 1, 2, 8
+"/Users/darrellparkhouse/development/untitled-ui-kit/tables.html", "HTML", 0, 21, 0, 0, 1, 22
+"Total", "-", 3, 21, 18, 1, 4, 47

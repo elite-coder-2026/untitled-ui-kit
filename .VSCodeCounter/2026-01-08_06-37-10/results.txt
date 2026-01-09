@@ -1,0 +1,106 @@
+Date : 2026-01-08 06:37:10
+Directory : /Users/darrellparkhouse/development/untitled-ui-kit
+Total : 58 files,  3208 codes, 79 comments, 593 blanks, all 3880 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| PostCSS  |          1 |      1,244 |          1 |        348 |      1,593 |
+| HTML     |         29 |        877 |         15 |         55 |        947 |
+| SCSS     |         18 |        609 |         54 |        103 |        766 |
+| Pug      |          3 |        237 |          9 |         36 |        282 |
+| XML      |          6 |        131 |          0 |          6 |        137 |
+| Markdown |          1 |        110 |          0 |         45 |        155 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                    | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                       |         58 |      3,208 |         79 |        593 |      3,880 |
+| . (Files)                                                                               |         24 |        661 |         15 |         96 |        772 |
+| components                                                                              |          3 |          0 |          0 |          3 |          3 |
+| css                                                                                     |          1 |      1,244 |          1 |        348 |      1,593 |
+| html                                                                                    |          1 |         53 |          0 |          0 |         53 |
+| img                                                                                     |          6 |        131 |          0 |          6 |        137 |
+| img (Files)                                                                             |          3 |        104 |          0 |          3 |        107 |
+| img/message                                                                             |          1 |         11 |          0 |          1 |         12 |
+| img/message/Messages                                                                    |          1 |         11 |          0 |          1 |         12 |
+| img/notify                                                                              |          2 |         16 |          0 |          2 |         18 |
+| layouts                                                                                 |          1 |         33 |          0 |          0 |         33 |
+| pages                                                                                   |          1 |        240 |          0 |          1 |        241 |
+| pug                                                                                     |          3 |        237 |          9 |         36 |        282 |
+| pug (Files)                                                                             |          1 |         23 |          0 |          5 |         28 |
+| pug/layouts                                                                             |          1 |         32 |          0 |          3 |         35 |
+| pug/pages                                                                               |          1 |        182 |          9 |         28 |        219 |
+| scss                                                                                    |         18 |        609 |         54 |        103 |        766 |
+| scss (Files)                                                                            |          2 |         27 |          5 |          6 |         38 |
+| scss/components                                                                         |          8 |        152 |          5 |         28 |        185 |
+| scss/partials                                                                           |          8 |        430 |         44 |         69 |        543 |
++-----------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                                                | language | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /Users/darrellparkhouse/development/untitled-ui-kit/README.md                           | Markdown |        110 |          0 |         45 |        155 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/about-us.html                       | HTML     |         12 |          0 |          1 |         13 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/careers.html                        | HTML     |         12 |          0 |          1 |         13 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/components/_button.html             | HTML     |          0 |          0 |          1 |          1 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/components/_card.html               | HTML     |          0 |          0 |          1 |          1 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/components/_notification.html       | HTML     |          0 |          0 |          1 |          1 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/contact.html                        | HTML     |         52 |          0 |          2 |         54 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/cookies.html                        | HTML     |         12 |          0 |          1 |         13 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/css/app.css                         | PostCSS  |      1,244 |          1 |        348 |      1,593 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/features.html                       | HTML     |          9 |          0 |          1 |         10 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/forms.html                          | HTML     |         15 |          0 |          0 |         15 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/html/index.html                     | HTML     |         53 |          0 |          0 |         53 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/img/close-icon.svg                  | XML      |          3 |          0 |          1 |          4 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/img/logo.svg                        | XML      |         98 |          0 |          1 |         99 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/img/message/Messages/noise.svg      | XML      |         11 |          0 |          1 |         12 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/img/notify/Avatar.svg               | XML      |         12 |          0 |          1 |         13 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/img/notify/close-icon.svg           | XML      |          4 |          0 |          1 |          5 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/img/sm-close-icon.svg               | XML      |          3 |          0 |          1 |          4 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/index.html                          | HTML     |         59 |          0 |          0 |         59 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/landing-page-one.html               | HTML     |        162 |         15 |         30 |        207 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/layouts/base.html                   | HTML     |         33 |          0 |          0 |         33 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/licenses.html                       | HTML     |         12 |          0 |          1 |         13 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/media-kit.html                      | HTML     |         12 |          0 |          1 |         13 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/news.html                           | HTML     |         12 |          0 |          1 |         13 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/notification.html                   | HTML     |         40 |          0 |          2 |         42 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/overview.html                       | HTML     |         12 |          0 |          1 |         13 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/pages/notifications.html            | HTML     |        240 |          0 |          1 |        241 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/press.html                          | HTML     |         12 |          0 |          1 |         13 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/pricing.html                        | HTML     |         12 |          0 |          1 |         13 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/privacy.html                        | HTML     |         12 |          0 |          1 |         13 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/pug/index.pug                       | Pug      |         23 |          0 |          5 |         28 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/pug/layouts/base.pug                | Pug      |         32 |          0 |          3 |         35 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/pug/pages/notifications.pug         | Pug      |        182 |          9 |         28 |        219 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/releases.html                       | HTML     |         12 |          0 |          1 |         13 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/scss/_icons.scss                    | SCSS     |         10 |          0 |          1 |         11 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/scss/app.scss                       | SCSS     |         17 |          5 |          5 |         27 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/scss/components/_badges.scss        | SCSS     |          0 |          0 |          1 |          1 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/scss/components/_buttons.scss       | SCSS     |          0 |          0 |          1 |          1 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/scss/components/_customers.scss     | SCSS     |         18 |          0 |          5 |         23 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/scss/components/_forms.scss         | SCSS     |         11 |          0 |          1 |         12 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/scss/components/_header.scss        | SCSS     |         37 |          1 |          8 |         46 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/scss/components/_navigation.scss    | SCSS     |          0 |          0 |          1 |          1 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/scss/components/_notifications.scss | SCSS     |         83 |          4 |         11 |         98 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/scss/components/_tables.scss        | SCSS     |          3 |          0 |          0 |          3 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/scss/partials/_base.scss            | SCSS     |         26 |          0 |          5 |         31 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/scss/partials/_footer.scss          | SCSS     |         22 |          0 |          3 |         25 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/scss/partials/_grid.scss            | SCSS     |          0 |          0 |          1 |          1 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/scss/partials/_layout.scss          | SCSS     |          0 |          0 |          1 |          1 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/scss/partials/_mixins.scss          | SCSS     |         34 |          0 |          7 |         41 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/scss/partials/_reset.scss           | SCSS     |         85 |         12 |         16 |        113 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/scss/partials/_utilities.scss       | SCSS     |         65 |         10 |         10 |         85 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/scss/partials/_variables.scss       | SCSS     |        198 |         22 |         26 |        246 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/settings.html                       | HTML     |         12 |          0 |          1 |         13 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/solutions.html                      | HTML     |          9 |          0 |          1 |         10 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/tables.html                         | HTML     |         21 |          0 |          1 |         22 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/terms.html                          | HTML     |         12 |          0 |          1 |         13 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/test.html                           | HTML     |         16 |          0 |          0 |         16 |
+| /Users/darrellparkhouse/development/untitled-ui-kit/tutorials.html                      | HTML     |         12 |          0 |          1 |         13 |
+| Total                                                                                   |          |      3,208 |         79 |        593 |      3,880 |
++-----------------------------------------------------------------------------------------+----------+------------+------------+------------+------------+

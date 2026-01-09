@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled UI Kit - Modern Component Library</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="container"><a class="nav-brand" href="/">UI Kit</a>
+          <ul class="nav-menu">
+            <li><a class="nav-link" href="/">Home</a></li>
+            <li><a class="nav-link" href="/pages/notifications.html">Notifications</a></li>
+            <li><a class="nav-link" href="#components">Components</a></li>
+            <li><a class="nav-link" href="#docs">Documentation</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="notifications-page">
+          <header class="page-header">
+            <h1>Notifications Component</h1>
+            <p class="lead">Versatile notification system for alerts, messages, and user feedback</p>
+          </header>
+          <section class="notification-section">
+            <h2>Basic Notifications</h2>
+            <div class="example-group">
+              <div class="notification notification--default">
+                <div class="notification__icon"><span>📢</span></div>
+                <div class="notification__content">
+                  <div class="notification__title">Default Notification</div>
+                  <div class="notification__message">This is a default notification message with standard styling.</div>
+                </div>
+                <button class="notification__close" type="button" aria-label="Close">×</button>
+              </div>
+              <div class="notification notification--info">
+                <div class="notification__icon"><span>ℹ️</span></div>
+                <div class="notification__content">
+                  <div class="notification__title">Information</div>
+                  <div class="notification__message">Here's some helpful information you should know about.</div>
+                </div>
+                <button class="notification__close" type="button" aria-label="Close">×</button>
+              </div>
+              <div class="notification notification--success">
+                <div class="notification__icon"><span>✅</span></div>
+                <div class="notification__content">
+                  <div class="notification__title">Success!</div>
+                  <div class="notification__message">Your action has been completed successfully.</div>
+                </div>
+                <button class="notification__close" type="button" aria-label="Close">×</button>
+              </div>
+              <div class="notification notification--warning">
+                <div class="notification__icon"><span>⚠️</span></div>
+                <div class="notification__content">
+                  <div class="notification__title">Warning</div>
+                  <div class="notification__message">Please be careful. This action may have consequences.</div>
+                </div>
+                <button class="notification__close" type="button" aria-label="Close">×</button>
+              </div>
+              <div class="notification notification--error">
+                <div class="notification__icon"><span>❌</span></div>
+                <div class="notification__content">
+                  <div class="notification__title">Error</div>
+                  <div class="notification__message">Something went wrong. Please try again later.</div>
+                </div>
+                <button class="notification__close" type="button" aria-label="Close">×</button>
+              </div>
+            </div>
+          </section>
+          <section class="notification-section">
+            <h2>Toast Notifications</h2>
+            <p class="section-description">Lightweight notifications that appear at the edge of the screen</p>
+            <div class="example-group">
+              <div class="toast-container toast-container--top-right">
+                <div class="toast toast--success">
+                  <div class="toast__content"><strong>File uploaded</strong><span> Your file has been uploaded successfully</span></div>
+                  <button class="toast__close">×</button>
+                </div>
+                <div class="toast toast--info">
+                  <div class="toast__content"><strong>New message</strong><span> You have 3 unread messages</span></div>
+                  <button class="toast__close">×</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="notification-section">
+            <h2>Inline Alerts</h2>
+            <p class="section-description">Contextual alerts for forms and content areas</p>
+            <div class="example-group">
+              <div class="alert alert--info"><strong>Note:</strong>This feature is currently in beta. Some functionality may be limited.</div>
+              <div class="alert alert--success"><strong>Well done!</strong>You successfully read this important alert message.</div>
+              <div class="alert alert--warning"><strong>Warning!</strong>Better check yourself, you're not looking too good.</div>
+              <div class="alert alert--error"><strong>Oh snap!</strong>Change a few things up and try submitting again.</div>
+            </div>
+          </section>
+          <section class="notification-section">
+            <h2>Banner Notifications</h2>
+            <p class="section-description">Full-width notifications for important system-wide messages</p>
+            <div class="example-group">
+              <div class="banner banner--info">
+                <div class="container">
+                  <div class="banner__content">
+                    <div class="banner__icon">📅</div>
+                    <div class="banner__message"><strong>Scheduled Maintenance:</strong>Our services will be unavailable on Sunday, 2:00 AM - 4:00 AM EST.</div>
+                    <button class="banner__action">View Details</button>
+                    <button class="banner__close">×</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="notification-section">
+            <h2>Notifications with Actions</h2>
+            <p class="section-description">Notifications that require user interaction</p>
+            <div class="example-group">
+              <div class="notification notification--info notification--with-actions">
+                <div class="notification__icon"><span>🔔</span></div>
+                <div class="notification__content">
+                  <div class="notification__title">New Terms of Service</div>
+                  <div class="notification__message">We've updated our terms of service. Please review and accept the new terms to continue.</div>
+                  <div class="notification__actions">
+                    <button class="btn btn-primary">Accept</button>
+                    <button class="btn btn-secondary">Review Later</button>
+                  </div>
+                </div>
+                <button class="notification__close" type="button" aria-label="Close">×</button>
+              </div>
+              <div class="notification notification--warning notification--with-actions">
+                <div class="notification__icon"><span>🔒</span></div>
+                <div class="notification__content">
+                  <div class="notification__title">Security Alert</div>
+                  <div class="notification__message">We noticed a new login from an unrecognized device. Was this you?</div>
+                  <div class="notification__actions">
+                    <button class="btn btn-success">Yes, it was me</button>
+                    <button class="btn btn-danger">No, secure my account</button>
+                  </div>
+                </div>
+                <button class="notification__close" type="button" aria-label="Close">×</button>
+              </div>
+            </div>
+          </section>
+          <section class="notification-section">
+            <h2>Progress Notifications</h2>
+            <p class="section-description">Notifications with progress indicators</p>
+            <div class="example-group">
+              <div class="notification notification--progress">
+                <div class="notification__icon"><span>📤</span></div>
+                <div class="notification__content">
+                  <div class="notification__title">Uploading files...</div>
+                  <div class="notification__message">3 of 5 files uploaded</div>
+                  <div class="progress-bar">
+                    <div class="progress-bar__fill" style="width: 60%"></div><span class="progress-bar__text">60%</span>
+                  </div>
+                </div>
+                <button class="notification__close" type="button" aria-label="Close">×</button>
+              </div>
+              <div class="notification notification--progress notification--success">
+                <div class="notification__icon"><span>✅</span></div>
+                <div class="notification__content">
+                  <div class="notification__title">Upload Complete</div>
+                  <div class="notification__message">All files have been uploaded successfully</div>
+                  <div class="progress-bar progress-bar--complete">
+                    <div class="progress-bar__fill" style="width: 100%"></div><span class="progress-bar__text">Complete</span>
+                  </div>
+                </div>
+                <button class="notification__close" type="button" aria-label="Close">×</button>
+              </div>
+            </div>
+          </section>
+          <section class="notification-section">
+            <h2>Stacked Notifications</h2>
+            <p class="section-description">Multiple notifications displayed in a stack</p>
+            <div class="example-group">
+              <div class="notification-stack">
+                <div class="notification notification--info notification--compact"><span class="notification__badge">3</span>
+                  <div class="notification__content">
+                    <div class="notification__message">You have 3 new messages</div>
+                  </div>
+                  <button class="notification__close">×</button>
+                </div>
+                <div class="notification notification--success notification--compact">
+                  <div class="notification__content">
+                    <div class="notification__message">Profile updated successfully</div>
+                  </div>
+                  <button class="notification__close">×</button>
+                </div>
+                <div class="notification notification--warning notification--compact">
+                  <div class="notification__content">
+                    <div class="notification__message">Your session will expire in 5 minutes</div>
+                  </div>
+                  <button class="notification__close">×</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="notification-section">
+            <h2>Usage Examples</h2>
+            <div class="code-block">
+              <h3>Basic Notification HTML</h3>
+              <pre><code class="language-html">&lt;!-- Basic notification structure --&gt;
+&lt;div class="notification notification--success"&gt;
+  &lt;div class="notification__content"&gt;
+    &lt;div class="notification__title"&gt;Success!&lt;/div&gt;
+    &lt;div class="notification__message"&gt;Your changes have been saved.&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class="notification__close"&gt;×&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </section>
+          <section class="notification-section">
+            <h2>JavaScript Integration</h2>
+            <div class="info-box">
+              <p>To make these notifications interactive, you'll need to add JavaScript for:</p>
+              <ul>
+                <li>Showing/hiding notifications</li>
+                <li>Auto-dismiss timers</li>
+                <li>Stacking and positioning</li>
+                <li>Animation effects</li>
+                <li>Action button handlers</li>
+                <li>Progress updates</li>
+              </ul>
+              <p>Check the <code>js/notifications.js</code> file for implementation details.</p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Untitled UI Kit. Built with modern web technologies.</p>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

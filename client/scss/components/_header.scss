@@ -1,0 +1,46 @@
+@import "../partials/variables";
+@import "../partials/mixins";
+
+/***** header styles *****/
+header {
+    padding: 16px;
+    .logo {
+        @include display('flex');
+        align-items: center;
+
+        .logo-text {
+            font-weight: bold;
+        }
+    }
+
+    .primary,
+    .secondary {
+        ul {
+            @include display('flex');
+        }
+
+        a {
+            font-size: px-to-rem(14);
+            @include set-text-clr(#414651);
+
+           &.primary-link {
+                background: map-get($colors, primary);
+                padding: 10px 14px;
+            }
+        }
+
+        li {
+            margin-right: 30px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .primary {
+        a {
+            font-size: px-to-rem(16);
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "untitled-ui-kit",
+  "version": "1.0.0",
+  "description": "A modern, customizable UI component library built with SCSS and JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass scss/app.scss css/app.css",
+    "sass:watch": "sass scss/app.scss css/app.css --watch",
+    "build": "npm run sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elite-coder-2026/untitled-ui-kit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elite-coder-2026/untitled-ui-kit/issues"
+  },
+  "homepage": "https://github.com/elite-coder-2026/untitled-ui-kit#readme",
+  "devDependencies": {
+    "sass": "^1.97.1"
+  }
+}

@@ -1,0 +1,17 @@
+- 
+
+- team member
+  - name
+  - avatar
+  - handle
+  - statuses
+    - active
+    - suspended
+    - terminated
+  - role
+    - developer
+    - designer
+    - underwriter
+  - email address
+  - tags
+    - relative to their position

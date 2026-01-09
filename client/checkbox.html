@@ -1,0 +1,199 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Checkbox Component</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            padding: 40px;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            margin-bottom: 24px;
+            color: #333;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        /* Custom Checkbox Component */
+        .custom-checkbox {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .custom-checkbox__input {
+            position: absolute;
+            opacity: 0;
+            width: 1px;
+            height: 1px;
+        }
+
+        .custom-checkbox__input:checked + .custom-checkbox__box {
+            background-color: #3b82f6;
+            border-color: #3b82f6;
+        }
+
+        .custom-checkbox__input:checked + .custom-checkbox__box::after {
+            transform: translate(-50%, -60%) rotate(45deg) scale(1);
+        }
+
+        .custom-checkbox__input:focus + .custom-checkbox__box {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+
+        .custom-checkbox__input:disabled + .custom-checkbox__box {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .custom-checkbox__input:disabled ~ .custom-checkbox__label {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .custom-checkbox__box {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #d1d5db;
+            border-radius: 4px;
+            background-color: white;
+            flex-shrink: 0;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+
+        .custom-checkbox__box::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            width: 6px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transition: transform 0.2s ease;
+        }
+
+        .custom-checkbox__label {
+            font-size: 14px;
+            color: #374151;
+            line-height: 1.5;
+        }
+
+        .custom-checkbox:hover .custom-checkbox__box {
+            border-color: #3b82f6;
+        }
+
+        /* Version with background images */
+        .custom-checkbox--image .custom-checkbox__box {
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .custom-checkbox--image .custom-checkbox__input:checked + .custom-checkbox__box {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%233b82f6"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>');
+        }
+
+        .custom-checkbox--image .custom-checkbox__box::after {
+            display: none;
+        }
+
+        code {
+            background: #f3f4f6;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>CSS-Only Checkboxes</h2>
+    <div class="checkbox-group">
+        <label class="custom-checkbox">
+            <input type="checkbox" class="custom-checkbox__input">
+            <span class="custom-checkbox__box"></span>
+            <span class="custom-checkbox__label">Accept terms and conditions</span>
+        </label>
+
+        <label class="custom-checkbox">
+            <input type="checkbox" class="custom-checkbox__input" checked>
+            <span class="custom-checkbox__box"></span>
+            <span class="custom-checkbox__label">Send me notifications</span>
+        </label>
+
+        <label class="custom-checkbox">
+            <input type="checkbox" class="custom-checkbox__input">
+            <span class="custom-checkbox__box"></span>
+            <span class="custom-checkbox__label">Subscribe to newsletter</span>
+        </label>
+
+        <label class="custom-checkbox">
+            <input type="checkbox" class="custom-checkbox__input" disabled>
+            <span class="custom-checkbox__box"></span>
+            <span class="custom-checkbox__label">Disabled option</span>
+        </label>
+    </div>
+
+    <h2>With Background Images (SVG)</h2>
+    <div class="checkbox-group">
+        <label class="custom-checkbox custom-checkbox--image">
+            <input type="checkbox" class="custom-checkbox__input">
+            <span class="custom-checkbox__box"></span>
+            <span class="custom-checkbox__label">Admin access</span>
+        </label>
+
+        <label class="custom-checkbox custom-checkbox--image">
+            <input type="checkbox" class="custom-checkbox__input" checked>
+            <span class="custom-checkbox__box"></span>
+            <span class="custom-checkbox__label">Manage drivers</span>
+        </label>
+
+        <label class="custom-checkbox custom-checkbox--image">
+            <input type="checkbox" class="custom-checkbox__input">
+            <span class="custom-checkbox__box"></span>
+            <span class="custom-checkbox__label">View analytics</span>
+        </label>
+    </div>
+
+    <p style="margin-top: 24px; color: #6b7280; font-size: 14px;">
+        Try clicking the checkboxes and using Tab + Space for keyboard navigation.
+        The first group uses pure CSS, the second uses SVG background images.
+    </p>
+</div>
+</body>
+</html>
+
+<!--This renders both versions:-->
+<!--1. **CSS-only** with animated checkmark-->
+<!--2. **Background image** version using inline SVG (you can replace with your own images)-->
+
+<!--Both are fully functional and accessible.-->

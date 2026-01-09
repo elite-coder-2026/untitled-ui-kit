@@ -1,0 +1,98 @@
+// Notifications Component Styles
+// Modern, polished notification system with animations
+@import "../partials/mixins";
+@import "../partials/variables";
+// Variables
+$notification-border-radius: 12px;
+$notification-padding: 1.25rem;
+$notification-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$notification-shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+// Color schemes
+$notification-colors: (
+        'default': (
+                'bg': #ffffff,
+                'border': #e5e7eb,
+                'text': #374151,
+                'icon': #6b7280
+        ),
+        'info': (
+                'bg': linear-gradient(135deg, #667eea 0%, #764ba2 100%),
+                'border': #667eea,
+                'text': #ffffff,
+                'icon': #ffffff
+        ),
+        'success': (
+                'bg': linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%),
+                'border': #84fab0,
+                'text': #065f46,
+                'icon': #065f46
+        ),
+        'warning': (
+                'bg': linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%),
+                'border': #f59e0b,
+                'text': #78350f,
+                'icon': #92400e
+        ),
+        'error': (
+                'bg': linear-gradient(135deg, #ff6b6b 0%, #ff8787 100%),
+                'border': #ef4444,
+                'text': #ffffff,
+                'icon': #ffffff
+        )
+);
+
+.notify {
+    max-width: 368px;
+    padding: 16px;
+    margin-top: 30px;
+    margin-left: 30px;
+    border: 1px solid $clr-base-border;
+    border-radius: px-to-rem(8);
+    box-shadow: 0 12px 16px  -4px rgba(10, 13, 18, 0.08),
+    0 4px 6px  -2px rgba(10, 13, 18, 0.03),
+    0 2px 2px  -1px rgba(10, 13, 18, 0.04);
+
+    @include display('flex');
+
+    .user-name {
+        font-size: px-to-rem(14);
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+
+    .time-ago {
+        font-size: px-to-rem(14);
+        font-weight: bold;
+        color: #717680
+    }
+
+    p.message {
+        font-size: px-to-rem(14);
+        margin-top: 6px;
+
+        @include set-text-clr(#535862)
+    }
+
+    .action-links {
+        margin-top: 12px;
+        a {
+            font-size: px-to-rem(14);
+            font-weight: bold;
+            text-transform: capitalize;
+            &.secondary-link {
+                @include set-text-clr(#535862);
+
+            }
+
+            &.primary-link {
+                @include set-text-clr(#6941C6);
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .profile {
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,50 @@
+@import "../partials/mixins";
+.supportive-text {
+    @include set-text-clr($clr-primary-500);
+    @include set-font-weight(bold);
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.large-text {
+
+    text-align: center;
+
+    margin: 20px 0 64px 0;
+
+    @include set-font-size(20);
+    @include set-text-clr($clr-large-text);
+
+    &:first-letter {
+        text-transform: capitalize;
+    }
+}
+
+.features-col {
+    .feature {
+        margin-bottom: 64px;
+        text-align: center;
+        width: 384px;
+
+        &-title {
+            @include set-font-size(18);
+            @include set-font-weight(bold);
+            margin-bottom: 10px;
+            &:first-letter {
+                text-transform: capitalize;
+            }
+        }
+
+        .feature-description {
+            @include set-text-clr(#535862)
+        }
+
+        .icon-bg {
+            width: 48px;
+            height: 48px;
+            border: 2px solid darken($clr-base-border, 6%);
+            margin: 0 auto 16px auto;
+        }
+    }
+}

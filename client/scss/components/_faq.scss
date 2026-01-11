@@ -1,0 +1,31 @@
+@import "../partials/mixins";
+@impORT "../partials/variables";
+.questions {
+    list-style: none;
+    max-width: 728px;
+    margin: 0 auto;
+
+    .question {
+        border-top: 1px solid $clr-base-border;
+        padding-top: 24px;
+        margin-bottom: 32px;
+
+        .q-header {
+            @include display('flex');
+            justify-content: space-between;
+            .title {
+                @include set-font-weight(bold);
+
+                &:first-letter {
+                    text-transform: capitalize;
+                }
+            }
+        }
+
+        p.q-content {
+            @include set-text-clr(#535861);
+            line-height: 1.5;
+            margin-top: 15px;
+        }
+    }
+}

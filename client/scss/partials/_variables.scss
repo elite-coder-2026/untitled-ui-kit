@@ -1,5 +1,3 @@
-@import "mixins";
-
 // Global Variables and Design Tokens
 // Modern UI Kit Variables
 $clr-base-bg: #FAFAFA;
@@ -8,10 +6,11 @@ $clr-footer-link-text: #535862;
 $clr-base-border: #EEEFF0;
 $clr-section-title-text: #181d27;
 $clr-muted-text: #717680;
-
+$clr-body-text: #535862;
 // Primary base color must be defined before use
 $clr-primary-500: #7f55d9;
-
+$clr-large-text: #535862;
+$clr-secondary-btn-text: #414651;
 $clr-primary-badge-bg: #F9F5FF;
 $clr-primary-badge-border: #E8D7FE;
 $clr-primary-badge-text: #6941C6;

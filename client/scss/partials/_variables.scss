@@ -7,6 +7,7 @@ $clr-base-border: #EEEFF0;
 $clr-section-title-text: #181d27;
 $clr-muted-text: #717680;
 $clr-body-text: #535862;
+$clr-base-badge-border: #D5D7DA;
 // Primary base color must be defined before use
 $clr-primary-500: #7f55d9;
 $clr-large-text: #535862;
@@ -14,7 +15,7 @@ $clr-secondary-btn-text: #414651;
 $clr-primary-badge-bg: #F9F5FF;
 $clr-primary-badge-border: #E8D7FE;
 $clr-primary-badge-text: #6941C6;
-
+$clr-supportive-text: #6941c6;
 // Primary scale (fixed invalid 840%)
 $clr-primary-100: lighten($clr-primary-500, 40%);
 $clr-primary-200: lighten($clr-primary-500, 30%);
@@ -26,56 +27,7 @@ $clr-primary-700: darken($clr-primary-500, 40%);
 $clr-primary-800: darken($clr-primary-500, 60%);
 $clr-primary-900: darken($clr-primary-500, 80%);
 
-// Colors
-$colors: (
-    // Primary colors
-        primary-100: $clr-primary-100,
-        primary-200: $clr-primary-200,
-        primary-300: $clr-primary-300,
-        primary-400: $clr-primary-400,
-        primary-500: $clr-primary-500,
-        primary-600: $clr-primary-600,
-        primary-700: $clr-primary-700,
-        primary-800: $clr-primary-800,
-        primary-900: $clr-primary-900,
-    // Secondary colors
-        secondary: #764ba2,
-        secondary-dark: #6b4393,
-        secondary-light: #8757b1,
-    // Status colors
-        success: #10b981,
-        success-dark: #059669,
-        success-light: #34d399,
-        warning: #f59e0b,
-        warning-dark: #d97706,
-        warning-light: #fbbf24,
-        error: #ef4444,
-        error-dark: #dc2626,
-        error-light: #f87171,
-        info: #3b82f6,
-        info-dark: #2563eb,
-        info-light: #60a5fa,
-    // Neutral colors
-        gray-50: #f9fafb,
-        gray-100: #f3f4f6,
-        gray-200: #e5e7eb,
-        gray-300: #d1d5db,
-        gray-400: #9ca3af,
-        gray-500: #6b7280,
-        gray-600: #4b5563,
-        gray-700: #374151,
-        gray-800: #1f2937,
-        gray-900: #111827,
-    // Background colors
-        bg-primary: #ffffff,
-        bg-secondary: #f9fafb,
-        bg-tertiary: #f3f4f6,
-    // Text colors
-        text-primary: #111827,
-        text-secondary: #4b5563,
-        text-tertiary: #6b7280,
-        text-inverse: #ffffff
-);
+
 
 //- todo: badge colors
 
@@ -255,3 +207,9 @@ $grid-gutter-width: 1.5rem;
 @function z($name) {
     @return map-get($z-indexes, $name);
 }
+
+$badge-sizes: (
+        'sm': map-get($badge-spacing, sm),
+        'md': map-get($badge-spacing, md),
+        'lg': map-get($badge-spacing, lg),
+)

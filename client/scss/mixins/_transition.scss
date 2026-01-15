@@ -1,4 +1,5 @@
-// stylelink-disable property-disallowed-list
+@import "../partials/variables";
+// stylelint-disable property-disallowed-list
 @mixin transition($transition...) {
     @if length($transition) == 0 {
         $transition: $transition-base;

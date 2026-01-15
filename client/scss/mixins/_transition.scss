@@ -1,8 +1,8 @@
-@import "../partials/variables";
+@use "../partials/variables" as v;
 // stylelint-disable property-disallowed-list
 @mixin transition($transition...) {
     @if length($transition) == 0 {
-        $transition: $transition-base;
+        $transition: v.$transition-base
     }
 
     @if length($transition) > 1 {
@@ -13,15 +13,17 @@
         }
     }
 
-    @if $enable-transitions {
+    @if v.$enable-transitions {
         @if nth($transition, 1) != null {
             transition: $transition;
         }
 
-        @if $enable-reduced-transitions and nth($transition, 1) != null and nth($transition, 1) != none {
+        @if v.$enable-reduced-transitions and nth($transition, 1) != null and nth($transition, 1) != none {
             @media(prefers-reduced-motion: reduce) {
                 transition: none
             }
         }
     }
+
+    color: v.$clr-base-border
 }

@@ -1,4 +1,6 @@
-@import "../partials/variables";
+@use '../partials/variables' as *;
+@use '../partials/mixins' as *;
+
 table {
     border-collapse: collapse;
     border: 1px solid $clr-base-border;

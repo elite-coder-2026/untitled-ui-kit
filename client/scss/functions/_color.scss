@@ -1,9 +1,0 @@
-@use '../partials/theme-map' as *;
-
-// Main color function - works with theme map
-@function color($palette, $shade: null) {
-    @if $shade == null {
-        @return map-get($theme, $palette);
-    }
-    @return map-get(map-get($theme, $palette), $shade);
-}

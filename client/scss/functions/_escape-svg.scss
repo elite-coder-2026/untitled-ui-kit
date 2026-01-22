@@ -1,5 +1,0 @@
-@function escape-svg($string) {
-    @if str-index($string, 'data:images/svg+xml') {
-        //@each $char, $encoded in $
-    }
-}

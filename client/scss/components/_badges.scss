@@ -1,8 +1,0 @@
-@use '../partials/mixins' as *;
-@use '../partials/variables' as *;
-
-.primary-error-badge {
-    //@include set-text-clr($clr-primary-500);
-    @include set-text-clr(color(primary, 500));
-
-}

@@ -1,0 +1,6 @@
+@use 'sass:map';
+@use '../abstracts/vars' as *;
+
+@function line-height($height) {
+  @return map.get($line-heights, $height);
+}

@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/css/
+dist/js/
+
+# IDE
+.idea/
+.vscode/
+*.sublime-*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp files
+*.log
+*.tmp
+
+# Figma extraction temp files
+figma-file.json
+colors-page.json
+extract-figma-colors.js
+parse-colors.js
+group-colors.js
+colors.json

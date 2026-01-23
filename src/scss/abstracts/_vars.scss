@@ -1,0 +1,246 @@
+// Untitled UI Color System
+// Auto-generated from Figma
+
+$theme: (
+  base: (
+    white: #ffffff,
+    black: #000000,
+  ),
+  gray: (
+    25: #ffffff,
+    50: #f9fafb,
+    100: #f5f5f5,
+    200: #e5e7eb,
+    300: #d1d1d6,
+    400: #a3a3a3,
+    500: #737373,
+    600: #525252,
+    700: #424242,
+    800: #292929,
+    900: #18181b,
+    950: #000000,
+  ),
+  primary: (
+    25: #f5faff,
+    50: #eff8ff,
+    100: #d1e9ff,
+    200: #b2ddff,
+    300: #84caff,
+    400: #53b1fd,
+    500: #2e90fa,
+    600: #1570ef,
+    700: #175cd3,
+    800: #1849a9,
+    900: #194185,
+    950: #102a56,
+  ),
+  secondary: (
+    25: #fcfaff,
+    50: #f9f5ff,
+    100: #f4ebff,
+    200: #e9d7fe,
+    300: #d6bbfb,
+    400: #b692f6,
+    500: #9e77ed,
+    600: #7f56d9,
+    700: #6941c6,
+    800: #53389e,
+    900: #42307d,
+    950: #2e125e,
+  ),
+  success: (
+    25: #f6fef9,
+    50: #ecfdf3,
+    100: #dcfae6,
+    200: #abefc6,
+    300: #75e0a7,
+    400: #47cd89,
+    500: #17b26a,
+    600: #079455,
+    700: #067647,
+    800: #085d3a,
+    900: #074d31,
+    950: #053321,
+  ),
+  warning: (
+    25: #fffcf5,
+    50: #fffaeb,
+    100: #fef0c7,
+    200: #fedf89,
+    300: #fec84b,
+    400: #fdb022,
+    500: #f79009,
+    600: #dc6803,
+    700: #b54708,
+    800: #93370d,
+    900: #7a2e0e,
+    950: #4e1d09,
+  ),
+  error: (
+    25: #fffbfa,
+    50: #fef3f2,
+    100: #fee4e2,
+    200: #fecdca,
+    300: #fda29b,
+    400: #f97066,
+    500: #f04438,
+    600: #d92d20,
+    700: #b42318,
+    800: #912018,
+    900: #7a271a,
+    950: #55160c,
+  ),
+  orange: (
+    25: #fff9f5,
+    50: #fff4ed,
+    100: #ffe6d5,
+    200: #ffd6ae,
+    300: #ff9c66,
+    400: #ff7237,
+    500: #ef6820,
+    600: #e04f16,
+    700: #b93815,
+    800: #932f19,
+    900: #772917,
+    950: #511c10,
+  ),
+  teal: (
+    25: #f6fefc,
+    50: #f0fdf9,
+    100: #ccfbef,
+    200: #99f6e0,
+    300: #5fe9d0,
+    400: #2ed3b7,
+    500: #15b79e,
+    600: #0e9384,
+    700: #107569,
+    800: #125d56,
+    900: #134e48,
+    950: #0a2926,
+  ),
+  pink: (
+    25: #fef6fb,
+    50: #fdf2fa,
+    100: #fce7f6,
+    200: #fcceee,
+    300: #faa7e0,
+    400: #f670c7,
+    500: #ee46bc,
+    600: #dd2590,
+    700: #c11574,
+    800: #9e165f,
+    900: #851651,
+    950: #4e0d30,
+  ),
+);
+
+// Typography & Spacing System
+// Auto-generated from Figma
+
+// Font Families
+$font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+$font-family-mono: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+
+// Font Sizes
+$font-sizes: (
+        xs: 0.75rem,     // 12px
+        sm: 0.875rem,    // 14px
+        md: 1rem,        // 16px
+        lg: 1.125rem,    // 18px
+        xl: 1.25rem,     // 20px
+        2xl: 1.5rem,     // 24px
+        3xl: 1.875rem,   // 30px
+        4xl: 2.25rem,    // 36px
+        5xl: 3rem,       // 48px
+        6xl: 3.75rem,    // 60px
+        7xl: 4.5rem,     // 72px
+        8xl: 7rem,       // 112px
+);
+
+// Font Weights
+$font-weights: (
+        thin: 100,
+        extralight: 200,
+        light: 300,
+        regular: 400,
+        medium: 500,
+        semibold: 600,
+        bold: 700,
+        extrabold: 800,
+        black: 900,
+);
+
+// Line Heights
+$line-heights: (
+        none: 1,
+        tight: 1.25,
+        snug: 1.375,
+        normal: 1.5,
+        relaxed: 1.625,
+        loose: 2,
+);
+
+// Letter Spacing
+$letter-spacings: (
+        tighter: -0.05em,
+        tight: -0.025em,
+        normal: 0,
+        wide: 0.025em,
+        wider: 0.05em,
+        widest: 0.1em,
+);
+
+// Spacing Scale
+$spacing: (
+        0: 0,
+        1: 0.125rem,    // 2px
+        2: 0.25rem,     // 4px
+        3: 0.375rem,    // 6px
+        4: 0.5rem,      // 8px
+        5: 0.625rem,    // 10px
+        6: 0.75rem,     // 12px
+        8: 1rem,        // 16px
+        10: 1.25rem,    // 20px
+        12: 1.5rem,     // 24px
+        16: 2rem,       // 32px
+        20: 2.5rem,     // 40px
+        24: 3rem,       // 48px
+        32: 4rem,       // 64px
+        40: 5rem,       // 80px
+        48: 6rem,       // 96px
+        64: 8rem,       // 128px
+);
+
+// Border Radius
+$radii: (
+        none: 0,
+        sm: 0.125rem,   // 2px
+        md: 0.25rem,    // 4px
+        lg: 0.375rem,   // 6px
+        xl: 0.5rem,     // 8px
+        2xl: 0.75rem,   // 12px
+        3xl: 1rem,      // 16px
+        4xl: 1.25rem,   // 20px
+        5xl: 1.5rem,    // 24px
+        full: 9999px,
+);
+
+// Shadows
+$shadows: (
+        xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05),
+        sm: (0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1)),
+        md: (0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1)),
+        lg: (0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1)),
+        xl: (0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)),
+        2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25),
+        none: none,
+);
+
+// Breakpoints
+$breakpoints: (
+        sm: 640px,
+        md: 768px,
+        lg: 1024px,
+        xl: 1280px,
+        2xl: 1536px,
+);

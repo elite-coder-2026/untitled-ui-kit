@@ -1,0 +1,6 @@
+@use 'sass:map';
+@use '../abstracts/vars' as *;
+
+@function space($size) {
+  @return map.get($spacing, $size);
+}

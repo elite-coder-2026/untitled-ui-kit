@@ -1,0 +1,30 @@
+{
+  "name": "untitled-ui-kit",
+  "version": "1.0.0",
+  "description": "A comprehensive UI kit built with SCSS",
+  "scripts": {
+    "dev": "concurrently \"npm run watch:css\" \"npm run watch:js\" \"npm run serve\"",
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "sass src/scss/main.scss dist/css/main.css --style=compressed --source-map",
+    "build:js": "esbuild src/js/main.js --bundle --outfile=dist/js/main.js --format=iife --minify --sourcemap",
+    "watch:css": "sass src/scss/main.scss dist/css/main.css --watch --source-map",
+    "watch:js": "esbuild src/js/main.js --bundle --outfile=dist/js/main.js --format=iife --watch --sourcemap",
+    "serve": "browser-sync start --server --files 'dist/**/*' 'pages/**/*' --startPath '/pages'",
+    "clean": "rm -rf dist/css/* dist/js/*"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "concurrently": "^8.2.2",
+    "esbuild": "^0.20.0",
+    "sass": "^1.71.0"
+  },
+  "keywords": [
+    "ui-kit",
+    "scss",
+    "css",
+    "design-system",
+    "components"
+  ],
+  "author": "",
+  "license": "MIT"
+}

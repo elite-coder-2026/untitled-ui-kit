@@ -1,0 +1,5 @@
+@use '../abstracts/vars' as *;
+
+@function breakpoint($size) {
+  @return map-get($breakpoints, $size);
+}

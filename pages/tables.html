@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tables - Untitled UI Kit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../dist/css/app.css">
+  <script src="../src/js/components.js"></script>
+</head>
+<body class="tables-page">
+  <h1>Tables</h1>
+  <p class="subtitle">Table styles from the Untitled UI Kit</p>
+
+  <!-- Users Table -->
+  <section>
+    <h2>Users Table</h2>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th><input type="checkbox" class="checkbox"></th>
+            <th>User</th>
+            <th>Role</th>
+            <th>Status</th>
+            <th>Last Active</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="checkbox" class="checkbox"></td>
+            <td>
+              <div class="user-cell">
+                <img class="avatar" src="https://i.pravatar.cc/40?img=1" alt="">
+                <div>
+                  <div class="user-name">Olivia Rhye</div>
+                  <div class="user-email">olivia@untitledui.com</div>
+                </div>
+              </div>
+            </td>
+            <td>Admin</td>
+            <td><span class="badge badge-success">Active</span></td>
+            <td class="text-muted">Just now</td>
+            <td>
+              <div class="actions">
+                <button class="btn-icon" title="Edit">
+                  <ui-icon name="edit-01" size="sm"></ui-icon>
+                </button>
+                <button class="btn-icon" title="Delete">
+                  <ui-icon name="trash-01" size="sm"></ui-icon>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checkbox"></td>
+            <td>
+              <div class="user-cell">
+                <img class="avatar" src="https://i.pravatar.cc/40?img=2" alt="">
+                <div>
+                  <div class="user-name">Phoenix Baker</div>
+                  <div class="user-email">phoenix@untitledui.com</div>
+                </div>
+              </div>
+            </td>
+            <td>Editor</td>
+            <td><span class="badge badge-success">Active</span></td>
+            <td class="text-muted">2 hours ago</td>
+            <td>
+              <div class="actions">
+                <button class="btn-icon" title="Edit">
+                  <ui-icon name="edit-01" size="sm"></ui-icon>
+                </button>
+                <button class="btn-icon" title="Delete">
+                  <ui-icon name="trash-01" size="sm"></ui-icon>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checkbox"></td>
+            <td>
+              <div class="user-cell">
+                <img class="avatar" src="https://i.pravatar.cc/40?img=3" alt="">
+                <div>
+                  <div class="user-name">Lana Steiner</div>
+                  <div class="user-email">lana@untitledui.com</div>
+                </div>
+              </div>
+            </td>
+            <td>Viewer</td>
+            <td><span class="badge badge-warning">Pending</span></td>
+            <td class="text-muted">1 day ago</td>
+            <td>
+              <div class="actions">
+                <button class="btn-icon" title="Edit">
+                  <ui-icon name="edit-01" size="sm"></ui-icon>
+                </button>
+                <button class="btn-icon" title="Delete">
+                  <ui-icon name="trash-01" size="sm"></ui-icon>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" class="checkbox"></td>
+            <td>
+              <div class="user-cell">
+                <img class="avatar" src="https://i.pravatar.cc/40?img=4" alt="">
+                <div>
+                  <div class="user-name">Demi Wilkinson</div>
+                  <div class="user-email">demi@untitledui.com</div>
+                </div>
+              </div>
+            </td>
+            <td>Viewer</td>
+            <td><span class="badge badge-gray">Inactive</span></td>
+            <td class="text-muted">3 days ago</td>
+            <td>
+              <div class="actions">
+                <button class="btn-icon" title="Edit">
+                  <ui-icon name="edit-01" size="sm"></ui-icon>
+                </button>
+                <button class="btn-icon" title="Delete">
+                  <ui-icon name="trash-01" size="sm"></ui-icon>
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Invoice Table -->
+  <section>
+    <h2>Invoice Table</h2>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Invoice</th>
+            <th>Client</th>
+            <th>Date</th>
+            <th>Due Date</th>
+            <th>Amount</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#" class="link">#INV-0012</a></td>
+            <td>
+              <div class="user-cell">
+                <img class="avatar" src="https://i.pravatar.cc/40?img=10" alt="">
+                <div>
+                  <div class="user-name">Acme Corp</div>
+                  <div class="user-email">billing@acme.com</div>
+                </div>
+              </div>
+            </td>
+            <td class="text-muted">Jan 20, 2026</td>
+            <td class="text-muted">Feb 20, 2026</td>
+            <td class="amount">$4,250.00</td>
+            <td><span class="badge badge-success">Paid</span></td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">#INV-0011</a></td>
+            <td>
+              <div class="user-cell">
+                <img class="avatar" src="https://i.pravatar.cc/40?img=11" alt="">
+                <div>
+                  <div class="user-name">Globex Inc</div>
+                  <div class="user-email">ap@globex.com</div>
+                </div>
+              </div>
+            </td>
+            <td class="text-muted">Jan 18, 2026</td>
+            <td class="text-muted">Feb 18, 2026</td>
+            <td class="amount">$1,890.00</td>
+            <td><span class="badge badge-warning">Pending</span></td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">#INV-0010</a></td>
+            <td>
+              <div class="user-cell">
+                <img class="avatar" src="https://i.pravatar.cc/40?img=12" alt="">
+                <div>
+                  <div class="user-name">Initech LLC</div>
+                  <div class="user-email">finance@initech.com</div>
+                </div>
+              </div>
+            </td>
+            <td class="text-muted">Jan 15, 2026</td>
+            <td class="text-muted">Jan 15, 2026</td>
+            <td class="amount">$3,600.00</td>
+            <td><span class="badge badge-error">Overdue</span></td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">#INV-0009</a></td>
+            <td>
+              <div class="user-cell">
+                <img class="avatar" src="https://i.pravatar.cc/40?img=13" alt="">
+                <div>
+                  <div class="user-name">Hooli</div>
+                  <div class="user-email">pay@hooli.com</div>
+                </div>
+              </div>
+            </td>
+            <td class="text-muted">Jan 10, 2026</td>
+            <td class="text-muted">Feb 10, 2026</td>
+            <td class="amount">$8,400.00</td>
+            <td><span class="badge badge-success">Paid</span></td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">#INV-0008</a></td>
+            <td>
+              <div class="user-cell">
+                <img class="avatar" src="https://i.pravatar.cc/40?img=14" alt="">
+                <div>
+                  <div class="user-name">Pied Piper</div>
+                  <div class="user-email">accounts@piedpiper.com</div>
+                </div>
+              </div>
+            </td>
+            <td class="text-muted">Jan 05, 2026</td>
+            <td class="text-muted">Feb 05, 2026</td>
+            <td class="amount">$2,150.00</td>
+            <td><span class="badge badge-success">Paid</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Orders Table -->
+  <section>
+    <h2>Orders Table</h2>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>Customer</th>
+            <th>Product</th>
+            <th>Qty</th>
+            <th>Total</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#" class="link">#ORD-7842</a></td>
+            <td>Olivia Rhye</td>
+            <td>Wireless Headphones Pro</td>
+            <td>1</td>
+            <td class="amount">$299.00</td>
+            <td><span class="badge badge-success">Delivered</span></td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">#ORD-7841</a></td>
+            <td>Phoenix Baker</td>
+            <td>Mechanical Keyboard</td>
+            <td>2</td>
+            <td class="amount">$358.00</td>
+            <td><span class="badge badge-primary">Shipped</span></td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">#ORD-7840</a></td>
+            <td>Lana Steiner</td>
+            <td>USB-C Hub</td>
+            <td>1</td>
+            <td class="amount">$89.00</td>
+            <td><span class="badge badge-warning">Processing</span></td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">#ORD-7839</a></td>
+            <td>Demi Wilkinson</td>
+            <td>Monitor Stand</td>
+            <td>3</td>
+            <td class="amount">$267.00</td>
+            <td><span class="badge badge-gray">Cancelled</span></td>
+          </tr>
+          <tr>
+            <td><a href="#" class="link">#ORD-7838</a></td>
+            <td>Candice Wu</td>
+            <td>Webcam HD</td>
+            <td>1</td>
+            <td class="amount">$149.00</td>
+            <td><span class="badge badge-success">Delivered</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Products Table -->
+  <section>
+    <h2>Products Table</h2>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>SKU</th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Sales</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="user-cell">
+                <div class="product-img"></div>
+                <div>
+                  <div class="user-name">Wireless Headphones</div>
+                  <div class="user-email">Electronics</div>
+                </div>
+              </div>
+            </td>
+            <td class="text-muted">WH-1000</td>
+            <td class="amount">$299.00</td>
+            <td>
+              <span class="badge badge-success">In Stock</span>
+              <span class="text-muted text-sm"> (45)</span>
+            </td>
+            <td>
+              <div class="progress-wrapper">
+                <div class="progress-bar"><div class="progress-fill" style="width:85%"></div></div>
+                <span class="text-muted text-sm">85%</span>
+              </div>
+            </td>
+            <td>
+              <button class="btn-icon">
+                <ui-icon name="dots-horizontal" size="sm"></ui-icon>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="user-cell">
+                <div class="product-img"></div>
+                <div>
+                  <div class="user-name">Ergonomic Chair</div>
+                  <div class="user-email">Furniture</div>
+                </div>
+              </div>
+            </td>
+            <td class="text-muted">EC-2050</td>
+            <td class="amount">$549.00</td>
+            <td>
+              <span class="badge badge-warning">Low Stock</span>
+              <span class="text-muted text-sm"> (5)</span>
+            </td>
+            <td>
+              <div class="progress-wrapper">
+                <div class="progress-bar"><div class="progress-fill" style="width:62%"></div></div>
+                <span class="text-muted text-sm">62%</span>
+              </div>
+            </td>
+            <td>
+              <button class="btn-icon">
+                <ui-icon name="dots-horizontal" size="sm"></ui-icon>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="user-cell">
+                <div class="product-img"></div>
+                <div>
+                  <div class="user-name">Mechanical Keyboard</div>
+                  <div class="user-email">Electronics</div>
+                </div>
+              </div>
+            </td>
+            <td class="text-muted">MK-3000</td>
+            <td class="amount">$179.00</td>
+            <td>
+              <span class="badge badge-success">In Stock</span>
+              <span class="text-muted text-sm"> (128)</span>
+            </td>
+            <td>
+              <div class="progress-wrapper">
+                <div class="progress-bar"><div class="progress-fill" style="width:94%"></div></div>
+                <span class="text-muted text-sm">94%</span>
+              </div>
+            </td>
+            <td>
+              <button class="btn-icon">
+                <ui-icon name="dots-horizontal" size="sm"></ui-icon>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="user-cell">
+                <div class="product-img"></div>
+                <div>
+                  <div class="user-name">Monitor Stand</div>
+                  <div class="user-email">Accessories</div>
+                </div>
+              </div>
+            </td>
+            <td class="text-muted">MS-100</td>
+            <td class="amount">$89.00</td>
+            <td>
+              <span class="badge badge-error">Out of Stock</span>
+              <span class="text-muted text-sm"> (0)</span>
+            </td>
+            <td>
+              <div class="progress-wrapper">
+                <div class="progress-bar"><div class="progress-fill" style="width:38%"></div></div>
+                <span class="text-muted text-sm">38%</span>
+              </div>
+            </td>
+            <td>
+              <button class="btn-icon">
+                <ui-icon name="dots-horizontal" size="sm"></ui-icon>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Transactions Table -->
+  <section>
+    <h2>Transactions Table</h2>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Transaction</th>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Amount</th>
+            <th>Balance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-muted">#TXN-9284</td>
+            <td class="text-muted">Jan 22, 2026</td>
+            <td>Payment from Acme Corp</td>
+            <td class="amount amount-positive">+$4,250.00</td>
+            <td class="amount">$28,450.00</td>
+          </tr>
+          <tr>
+            <td class="text-muted">#TXN-9283</td>
+            <td class="text-muted">Jan 21, 2026</td>
+            <td>Subscription - Pro Plan</td>
+            <td class="amount amount-negative">-$99.00</td>
+            <td class="amount">$24,200.00</td>
+          </tr>
+          <tr>
+            <td class="text-muted">#TXN-9282</td>
+            <td class="text-muted">Jan 20, 2026</td>
+            <td>Payment from Globex Inc</td>
+            <td class="amount amount-positive">+$1,890.00</td>
+            <td class="amount">$24,299.00</td>
+          </tr>
+          <tr>
+            <td class="text-muted">#TXN-9281</td>
+            <td class="text-muted">Jan 19, 2026</td>
+            <td>Refund - Order #7839</td>
+            <td class="amount amount-negative">-$267.00</td>
+            <td class="amount">$22,409.00</td>
+          </tr>
+          <tr>
+            <td class="text-muted">#TXN-9280</td>
+            <td class="text-muted">Jan 18, 2026</td>
+            <td>Payment from Hooli</td>
+            <td class="amount amount-positive">+$8,400.00</td>
+            <td class="amount">$22,676.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</body>
+</html>

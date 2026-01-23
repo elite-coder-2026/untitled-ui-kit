@@ -1,4 +1,14 @@
-@use 'abstracts/vars';
+// Abstracts & Functions
+@use 'abstracts/vars' as *;
+@use 'functions' as *;
 
-@use 'functions/breakpoint';
-@use 'functions/color';
+// Components
+@use 'components/buttons';
+
+// Pages
+@use 'pages/index';
+@use 'pages/dropdown';
+@use 'pages/calendars';
+@use 'pages/tables';
+@use 'pages/avatars';
+@use 'pages/search-results';

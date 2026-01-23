@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Results: Beauticians - Untitled UI Kit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/css/app.css">
+</head>
+<body class="search-results-page">
+
+  <div class="search-header">
+    <h1>Search Results</h1>
+    <p class="search-meta">Showing <strong>8 beauticians</strong> near you</p>
+  </div>
+
+  <div class="search-bar">
+    <div class="search-input">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="8"></circle>
+        <path d="m21 21-4.35-4.35"></path>
+      </svg>
+      <input type="text" value="Beauticians" placeholder="Search services...">
+    </div>
+    <button class="search-btn">Search</button>
+  </div>
+
+  <div class="search-filters">
+    <button class="filter-btn active">All Services</button>
+    <button class="filter-btn">Hair</button>
+    <button class="filter-btn">Nails</button>
+    <button class="filter-btn">Makeup</button>
+    <button class="filter-btn">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path d="M3 6h18M3 12h18M3 18h18"></path>
+      </svg>
+      More Filters
+    </button>
+  </div>
+
+  <div class="results-table">
+    <table id="beauticians-table">
+      <thead>
+        <tr>
+          <th class="sortable">Beautician</th>
+          <th class="sortable">Specialty</th>
+          <th class="sortable">Rating</th>
+          <th>Availability</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="product-cell">
+              <img class="product-img" src="../src/img/avatars/avatar-01.png" alt="">
+              <div class="product-info">
+                <div class="product-name">Olivia Rhye</div>
+                <div class="product-sku">Glamour Studio • 0.3 mi</div>
+              </div>
+            </div>
+          </td>
+          <td>Hair Styling, Color</td>
+          <td>
+            <div class="rating">
+              <div class="stars">
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <span class="count">(128)</span>
+            </div>
+          </td>
+          <td><span class="stock-badge in-stock">Available Today</span></td>
+          <td><button class="action-btn">Book Now</button></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="product-cell">
+              <img class="product-img" src="../src/img/avatars/avatar-02.png" alt="">
+              <div class="product-info">
+                <div class="product-name">Phoenix Baker</div>
+                <div class="product-sku">Beauty Lounge • 0.5 mi</div>
+              </div>
+            </div>
+          </td>
+          <td>Makeup, Skincare</td>
+          <td>
+            <div class="rating">
+              <div class="stars">
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <span class="count">(94)</span>
+            </div>
+          </td>
+          <td><span class="stock-badge in-stock">Available Today</span></td>
+          <td><button class="action-btn">Book Now</button></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="product-cell">
+              <img class="product-img" src="../src/img/avatars/avatar-03.png" alt="">
+              <div class="product-info">
+                <div class="product-name">Lana Steiner</div>
+                <div class="product-sku">Nail Art Co. • 0.8 mi</div>
+              </div>
+            </div>
+          </td>
+          <td>Nails, Manicure</td>
+          <td>
+            <div class="rating">
+              <div class="stars">
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="empty" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <span class="count">(67)</span>
+            </div>
+          </td>
+          <td><span class="stock-badge low-stock">Next Available: Tomorrow</span></td>
+          <td><button class="action-btn">Book Now</button></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="product-cell">
+              <img class="product-img" src="../src/img/avatars/avatar-04.png" alt="">
+              <div class="product-info">
+                <div class="product-name">Demi Wilkinson</div>
+                <div class="product-sku">Glow Spa • 1.2 mi</div>
+              </div>
+            </div>
+          </td>
+          <td>Facials, Skincare</td>
+          <td>
+            <div class="rating">
+              <div class="stars">
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <span class="count">(156)</span>
+            </div>
+          </td>
+          <td><span class="stock-badge in-stock">Available Today</span></td>
+          <td><button class="action-btn">Book Now</button></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="product-cell">
+              <img class="product-img" src="../src/img/avatars/avatar-05.png" alt="">
+              <div class="product-info">
+                <div class="product-name">Candice Wu</div>
+                <div class="product-sku">Lash & Brow Bar • 1.5 mi</div>
+              </div>
+            </div>
+          </td>
+          <td>Lashes, Brows</td>
+          <td>
+            <div class="rating">
+              <div class="stars">
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="empty" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <span class="count">(82)</span>
+            </div>
+          </td>
+          <td><span class="stock-badge in-stock">Available Today</span></td>
+          <td><button class="action-btn">Book Now</button></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="product-cell">
+              <img class="product-img" src="../src/img/avatars/avatar-06.png" alt="">
+              <div class="product-info">
+                <div class="product-name">Natali Craig</div>
+                <div class="product-sku">Hair Haven • 1.8 mi</div>
+              </div>
+            </div>
+          </td>
+          <td>Hair Extensions, Braids</td>
+          <td>
+            <div class="rating">
+              <div class="stars">
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <span class="count">(203)</span>
+            </div>
+          </td>
+          <td><span class="stock-badge low-stock">Next Available: Friday</span></td>
+          <td><button class="action-btn">Book Now</button></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="product-cell">
+              <img class="product-img" src="../src/img/avatars/avatar-07.png" alt="">
+              <div class="product-info">
+                <div class="product-name">Drew Cano</div>
+                <div class="product-sku">The Beauty Room • 2.1 mi</div>
+              </div>
+            </div>
+          </td>
+          <td>Makeup, Bridal</td>
+          <td>
+            <div class="rating">
+              <div class="stars">
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="empty" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="empty" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <span class="count">(31)</span>
+            </div>
+          </td>
+          <td><span class="stock-badge out-of-stock">Fully Booked</span></td>
+          <td><button class="action-btn" disabled>Waitlist</button></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="product-cell">
+              <img class="product-img" src="../src/img/avatars/avatar-08.png" alt="">
+              <div class="product-info">
+                <div class="product-name">Orlando Diggs</div>
+                <div class="product-sku">Style Studio • 2.4 mi</div>
+              </div>
+            </div>
+          </td>
+          <td>Hair Styling, Barber</td>
+          <td>
+            <div class="rating">
+              <div class="stars">
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <span class="count">(112)</span>
+            </div>
+          </td>
+          <td><span class="stock-badge in-stock">Available Today</span></td>
+          <td><button class="action-btn">Book Now</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagination" data-table="beauticians-table" data-per-page="4">
+      <div class="page-btns"></div>
+    </div>
+  </div>
+
+  <div class="search-header" style="margin-top: 48px;">
+    <h1>Cab Drivers</h1>
+    <p class="search-meta">Showing <strong>6 drivers</strong> available nearby</p>
+  </div>
+
+  <div class="search-filters">
+    <button class="filter-btn active">All Vehicles</button>
+    <button class="filter-btn">Sedan</button>
+    <button class="filter-btn">SUV</button>
+    <button class="filter-btn">Luxury</button>
+    <button class="filter-btn">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path d="M3 6h18M3 12h18M3 18h18"></path>
+      </svg>
+      More Filters
+    </button>
+  </div>
+
+  <div class="results-table">
+    <table id="drivers-table">
+      <thead>
+        <tr>
+          <th class="sortable">Driver</th>
+          <th class="sortable">Vehicle</th>
+          <th class="sortable">Rating</th>
+          <th>ETA</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="product-cell">
+              <img class="product-img" src="../src/img/avatars/avatar-08.png" alt="">
+              <div class="product-info">
+                <div class="product-name">Marcus Johnson</div>
+                <div class="product-sku">5,230 trips • Member since 2019</div>
+              </div>
+            </div>
+          </td>
+          <td>Toyota Camry • Black</td>
+          <td>
+            <div class="rating">
+              <div class="stars">
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <span class="count">(4.9)</span>
+            </div>
+          </td>
+          <td><span class="stock-badge in-stock">2 min away</span></td>
+          <td><button class="action-btn">Request</button></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="product-cell">
+              <img class="product-img" src="../src/img/avatars/avatar-09.png" alt="">
+              <div class="product-info">
+                <div class="product-name">David Chen</div>
+                <div class="product-sku">3,847 trips • Member since 2020</div>
+              </div>
+            </div>
+          </td>
+          <td>Honda Accord • Silver</td>
+          <td>
+            <div class="rating">
+              <div class="stars">
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <span class="count">(4.8)</span>
+            </div>
+          </td>
+          <td><span class="stock-badge in-stock">3 min away</span></td>
+          <td><button class="action-btn">Request</button></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="product-cell">
+              <img class="product-img" src="../src/img/avatars/avatar-10.png" alt="">
+              <div class="product-info">
+                <div class="product-name">Robert Williams</div>
+                <div class="product-sku">8,102 trips • Member since 2017</div>
+              </div>
+            </div>
+          </td>
+          <td>Ford Explorer • White</td>
+          <td>
+            <div class="rating">
+              <div class="stars">
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <span class="count">(5.0)</span>
+            </div>
+          </td>
+          <td><span class="stock-badge low-stock">5 min away</span></td>
+          <td><button class="action-btn">Request</button></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="product-cell">
+              <img class="product-img" src="../src/img/avatars/avatar-04.png" alt="">
+              <div class="product-info">
+                <div class="product-name">James Rodriguez</div>
+                <div class="product-sku">2,156 trips • Member since 2021</div>
+              </div>
+            </div>
+          </td>
+          <td>Tesla Model 3 • Blue</td>
+          <td>
+            <div class="rating">
+              <div class="stars">
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="empty" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <span class="count">(4.7)</span>
+            </div>
+          </td>
+          <td><span class="stock-badge in-stock">4 min away</span></td>
+          <td><button class="action-btn">Request</button></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="product-cell">
+              <img class="product-img" src="../src/img/avatars/avatar-05.png" alt="">
+              <div class="product-info">
+                <div class="product-name">Michael Brown</div>
+                <div class="product-sku">6,891 trips • Member since 2018</div>
+              </div>
+            </div>
+          </td>
+          <td>Mercedes E-Class • Black</td>
+          <td>
+            <div class="rating">
+              <div class="stars">
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <span class="count">(4.9)</span>
+            </div>
+          </td>
+          <td><span class="stock-badge low-stock">8 min away</span></td>
+          <td><button class="action-btn">Request</button></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="product-cell">
+              <img class="product-img" src="../src/img/avatars/avatar-06.png" alt="">
+              <div class="product-info">
+                <div class="product-name">Anthony Davis</div>
+                <div class="product-sku">1,423 trips • Member since 2022</div>
+              </div>
+            </div>
+          </td>
+          <td>Chevrolet Suburban • Gray</td>
+          <td>
+            <div class="rating">
+              <div class="stars">
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="filled" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <svg class="empty" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <span class="count">(4.6)</span>
+            </div>
+          </td>
+          <td><span class="stock-badge out-of-stock">Offline</span></td>
+          <td><button class="action-btn" disabled>Unavailable</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagination" data-table="drivers-table" data-per-page="3">
+      <div class="page-btns"></div>
+    </div>
+  </div>
+
+  <script>
+    class TablePagination {
+      constructor(paginationEl) {
+        this.pagination = paginationEl;
+        this.tableId = paginationEl.dataset.table;
+        this.perPage = parseInt(paginationEl.dataset.perPage) || 5;
+        this.table = document.getElementById(this.tableId);
+        this.rows = Array.from(this.table.querySelectorAll('tbody tr'));
+        this.totalPages = Math.ceil(this.rows.length / this.perPage);
+        this.currentPage = 1;
+        this.pageBtns = paginationEl.querySelector('.page-btns');
+
+        this.init();
+      }
+
+      init() {
+        this.renderButtons();
+        this.showPage(1);
+      }
+
+      renderButtons() {
+        this.pageBtns.innerHTML = '';
+
+        const prevBtn = document.createElement('button');
+        prevBtn.textContent = 'Previous';
+        prevBtn.addEventListener('click', () => this.prevPage());
+        this.pageBtns.appendChild(prevBtn);
+
+        for (let i = 1; i <= this.totalPages; i++) {
+          const btn = document.createElement('button');
+          btn.textContent = i;
+          btn.dataset.page = i;
+          btn.addEventListener('click', () => this.showPage(i));
+          this.pageBtns.appendChild(btn);
+        }
+
+        const nextBtn = document.createElement('button');
+        nextBtn.textContent = 'Next';
+        nextBtn.addEventListener('click', () => this.nextPage());
+        this.pageBtns.appendChild(nextBtn);
+      }
+
+      showPage(page) {
+        this.currentPage = page;
+        const start = (page - 1) * this.perPage;
+        const end = start + this.perPage;
+
+        this.rows.forEach((row, index) => {
+          row.style.display = (index >= start && index < end) ? '' : 'none';
+        });
+
+        this.updateButtons();
+      }
+
+      updateButtons() {
+        const buttons = this.pageBtns.querySelectorAll('button');
+        const prevBtn = buttons[0];
+        const nextBtn = buttons[buttons.length - 1];
+
+        prevBtn.disabled = this.currentPage === 1;
+        nextBtn.disabled = this.currentPage === this.totalPages;
+
+        buttons.forEach(btn => {
+          if (btn.dataset.page) {
+            btn.classList.toggle('active', parseInt(btn.dataset.page) === this.currentPage);
+          }
+        });
+      }
+
+      prevPage() {
+        if (this.currentPage > 1) {
+          this.showPage(this.currentPage - 1);
+        }
+      }
+
+      nextPage() {
+        if (this.currentPage < this.totalPages) {
+          this.showPage(this.currentPage + 1);
+        }
+      }
+    }
+
+    document.querySelectorAll('.pagination[data-table]').forEach(el => {
+      new TablePagination(el);
+    });
+  </script>
+</body>
+</html>

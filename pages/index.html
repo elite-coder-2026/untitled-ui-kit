@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Untitled UI Kit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../dist/css/index.css">
+</head>
+<body>
+  <div class="container py-12">
+    <header class="mb-12">
+      <h1 class="mb-2">Untitled UI Kit</h1>
+      <p class="text-lg">A comprehensive design system built with SCSS</p>
+    </header>
+
+    <!-- Colors -->
+    <section class="mb-12">
+      <h2 class="mb-6">Colors</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        <div class="color-swatch" style="--color: var(--primary-500)">
+          <div class="color-preview"></div>
+          <span class="text-sm">Primary 500</span>
+        </div>
+        <div class="color-swatch" style="--color: var(--secondary-500)">
+          <div class="color-preview"></div>
+          <span class="text-sm">Secondary 500</span>
+        </div>
+        <div class="color-swatch" style="--color: var(--success-500)">
+          <div class="color-preview"></div>
+          <span class="text-sm">Success 500</span>
+        </div>
+        <div class="color-swatch" style="--color: var(--warning-500)">
+          <div class="color-preview"></div>
+          <span class="text-sm">Warning 500</span>
+        </div>
+        <div class="color-swatch" style="--color: var(--error-500)">
+          <div class="color-preview"></div>
+          <span class="text-sm">Error 500</span>
+        </div>
+        <div class="color-swatch" style="--color: var(--gray-500)">
+          <div class="color-preview"></div>
+          <span class="text-sm">Gray 500</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Buttons -->
+    <section class="mb-12">
+      <h2 class="mb-6">Buttons</h2>
+      <div class="flex flex-wrap gap-3 mb-6">
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-secondary">Secondary</button>
+        <button class="btn btn-success">Success</button>
+        <button class="btn btn-warning">Warning</button>
+        <button class="btn btn-error">Error</button>
+        <button class="btn btn-ghost">Ghost</button>
+      </div>
+      <div class="flex flex-wrap gap-3 mb-6">
+        <button class="btn btn-primary-outline">Primary Outline</button>
+        <button class="btn btn-secondary-outline">Secondary Outline</button>
+        <button class="btn btn-error-outline">Error Outline</button>
+      </div>
+      <div class="flex flex-wrap items-center gap-3">
+        <button class="btn btn-primary btn-xs">Extra Small</button>
+        <button class="btn btn-primary btn-sm">Small</button>
+        <button class="btn btn-primary">Default</button>
+        <button class="btn btn-primary btn-lg">Large</button>
+        <button class="btn btn-primary btn-xl">Extra Large</button>
+      </div>
+    </section>
+
+    <!-- Forms -->
+    <section class="mb-12">
+      <h2 class="mb-6">Forms</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="form-group">
+          <label class="form-label">Email address</label>
+          <input type="email" class="form-input" placeholder="you@example.com">
+          <p class="form-help">We'll never share your email.</p>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Select option</label>
+          <select class="form-select">
+            <option>Choose an option</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+        <div class="form-group form-error">
+          <label for="pwd"class="form-label">Password</label>
+          <input type="password" id="pwd" class="form-input" placeholder="Enter password">
+          <p class="form-help">Password must be at least 8 characters.</p>
+        </div>
+        <div class="form-group">
+          <label for="ft" class="form-label">Message</label>
+          <textarea id="ft" class="form-textarea" placeholder="Your message"></textarea>
+        </div>
+      </div>
+      <div class="flex flex-wrap gap-6 mt-6">
+        <label class="form-check">
+          <input type="checkbox" checked>
+          <span class="form-check-label">Checkbox option</span>
+        </label>
+        <label class="form-check">
+          <input type="radio" name="radio">
+          <span class="form-check-label">Radio option 1</span>
+        </label>
+        <label class="form-check">
+          <input type="radio" name="radio">
+          <span class="form-check-label">Radio option 2</span>
+        </label>
+        <label class="form-switch">
+          <input type="checkbox" checked>
+          <span class="form-switch-track"></span>
+          <span>Toggle switch</span>
+        </label>
+      </div>
+    </section>
+
+    <!-- Badges -->
+    <section class="mb-12">
+      <h2 class="mb-6">Badges</h2>
+      <div class="flex flex-wrap gap-3 mb-4">
+        <span class="badge badge-gray">Gray</span>
+        <span class="badge badge-primary">Primary</span>
+        <span class="badge badge-secondary">Secondary</span>
+        <span class="badge badge-success">Success</span>
+        <span class="badge badge-warning">Warning</span>
+        <span class="badge badge-error">Error</span>
+        <span class="badge badge-teal">Teal</span>
+        <span class="badge badge-pink">Pink</span>
+      </div>
+      <div class="flex flex-wrap gap-3 mb-4">
+        <span class="badge badge-solid-primary">Solid Primary</span>
+        <span class="badge badge-solid-success">Solid Success</span>
+        <span class="badge badge-solid-error">Solid Error</span>
+      </div>
+      <div class="flex flex-wrap gap-3">
+        <span class="badge badge-primary badge-dot">With dot</span>
+        <span class="badge badge-success badge-dot">Online</span>
+        <span class="badge badge-error badge-dot">Offline</span>
+      </div>
+    </section>
+
+    <!-- Alerts -->
+    <section class="mb-12">
+      <h2 class="mb-6">Alerts</h2>
+      <div class="space-y-4">
+        <div class="alert alert-info">
+          <svg class="alert-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <div class="alert-content">
+            <div class="alert-title">Information</div>
+            <div class="alert-description">This is an informational alert message.</div>
+          </div>
+        </div>
+        <div class="alert alert-success">
+          <svg class="alert-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <div class="alert-content">
+            <div class="alert-title">Success</div>
+            <div class="alert-description">Your changes have been saved successfully.</div>
+          </div>
+        </div>
+        <div class="alert alert-warning">
+          <svg class="alert-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+          </svg>
+          <div class="alert-content">
+            <div class="alert-title">Warning</div>
+            <div class="alert-description">Please review your information before proceeding.</div>
+          </div>
+        </div>
+        <div class="alert alert-error">
+          <svg class="alert-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <div class="alert-content">
+            <div class="alert-title">Error</div>
+            <div class="alert-description">Something went wrong. Please try again.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards -->
+    <section class="mb-12">
+      <h2 class="mb-6">Cards</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Basic Card</h3>
+            <p class="card-text">This is a simple card with some content inside.</p>
+            <button class="btn btn-primary btn-sm">Learn more</button>
+          </div>
+        </div>
+        <div class="card card-shadow">
+          <div class="card-header">
+            <h3 class="card-title">Card with Header</h3>
+            <p class="card-subtitle">Supporting text</p>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Cards can have headers, footers, and various content arrangements.</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-ghost btn-sm">Cancel</button>
+            <button class="btn btn-primary btn-sm">Save</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://placehold.co/400x200/e5e7eb/737373?text=Image" alt="Placeholder" class="card-img card-img-top">
+          <div class="card-body">
+            <h3 class="card-title">Card with Image</h3>
+            <p class="card-text">Cards can include images and other media.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Demo -->
+    <section class="mb-12">
+      <h2 class="mb-6">Modal</h2>
+      <button class="btn btn-primary" id="openModal">Open Modal</button>
+    </section>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal-backdrop" id="modalBackdrop"></div>
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <h3 class="modal-title">Modal Title</h3>
+      <button class="modal-close" id="closeModal">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p>This is a modal dialog. You can put any content here - forms, images, or information.</p>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-ghost" id="cancelModal">Cancel</button>
+      <button class="btn btn-primary">Confirm</button>
+    </div>
+  </div>
+
+  <script src="../dist/js/main.js"></script>
+</body>
+</html>

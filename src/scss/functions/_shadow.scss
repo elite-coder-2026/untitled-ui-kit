@@ -1,0 +1,6 @@
+@use 'sass:map';
+@use '../abstracts/vars' as *;
+
+@function shadow($size) {
+  @return map.get($shadows, $size);
+}

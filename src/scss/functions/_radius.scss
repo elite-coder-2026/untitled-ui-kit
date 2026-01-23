@@ -1,0 +1,6 @@
+@use 'sass:map';
+@use '../abstracts/vars' as *;
+
+@function radius($size) {
+  @return map.get($radii, $size);
+}
